@@ -19,9 +19,11 @@ export default function lista1() {
 function gerarLista(valor = 10) {
     const lista = []
     
-    for(let i = 0; i <= valor; i++){
-        const frase = i
-        lista.push(frase)
+    if(valor !== ''){
+        for(let i = 0; i <= valor; i++){
+            const frase = i
+            lista.push(frase)
+        }
     }
     return lista
 }
